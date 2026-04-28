@@ -1,0 +1,269 @@
+/* RESET E BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+/* HEADER */
+header {
+    background: #0a3d62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    animation: fadeDown 0.6s ease;
+}
+
+/* MENU */
+nav {
+    background: #1e5f8a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d0e6f7;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    padding: 20px;
+    flex: 1;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    animation: fadeUp 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* CORES */
+.temp { background: #ecf0f1; }
+.risco { background: #ecf0f1; }
+.porta { background: #2980b9; }
+.status { background: #8e44ad; }
+
+/* ALERTAS */
+.alerta {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeUp 0.5s ease;
+}
+
+.alerta-baixo {
+    background: #d4edda;
+    color: #155724;
+}
+
+.alerta-medio {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.alerta-alto {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* DASHBOARD */
+.dashboard {
+    margin-top: 30px;
+}
+
+.grafico {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+    animation: fadeUp 0.5s ease;
+}
+
+.grafico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* FORMULÁRIO */
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    animation: fadeUp 0.6s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0a3d62;
+}
+
+input, textarea, select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1e5f8a;
+    box-shadow: 0 0 5px rgba(30,95,138,0.3);
+}
+
+/* BOTÕES */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #0a3d62;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e5f8a;
+    transform: scale(1.03);
+}
+
+/* BOTÃO FLUTUANTE */
+.btn-suporte {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e5f8a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-suporte:hover {
+    background: #0a3d62;
+    transform: scale(1.05);
+}
+
+/* LISTA DE CHAMADOS */
+.chamado {
+    background: #f8fbff;
+    border-left: 5px solid #1e5f8a;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+
+    animation: fadeUp 0.5s ease;
+}
+
+.chamado p {
+    margin: 5px 0;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #0a3d62;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rodape p {
+    margin: 5px 0;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-card {
+        width: 90%;
+    }
+}

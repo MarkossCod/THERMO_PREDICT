@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Vacinas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema Inteligente de Monitoramento de Vacinas</h1>
+    <p>Controle seguro da cadeia fria em tempo real</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#status">Status</a>
+    <a href="#predicao">Predição</a>
+    <a href="#sobre">Sobre</a>
+    <a href="form.html">Suporte</a>
+</nav>
+
+<main class="container">
+
+    <!-- CARDS -->
+    <section class="cards" id="status">
+
+        <article class="card temp">
+            <h3>Temperatura</h3>
+            <p id="tempValor">-- °C</p>
+        </article>
+
+        <article class="card risco">
+            <h3>Nível de Risco</h3>
+            <p id="riscoValor">--</p>
+        </article>
+
+        <article class="card porta">
+            <h3>Estado da Porta</h3>
+            <p id="portaValor">--</p>
+        </article>
+
+        <article class="card status">
+            <h3>Status do Sistema</h3>
+            <p id="statusValor">Carregando...</p>
+        </article>
+
+    </section>
+
+    <!-- ALERTA DINÂMICO -->
+    <section id="alertaBox" class="alerta alerta-baixo">
+        ✔ Sistema operando normalmente.
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="dashboard">
+        <h2>Monitoramento em Tempo Real</h2>
+
+        <section class="grafico">
+            <h3>Variação de Temperatura</h3>
+            <p>[ Gráfico será implementado futuramente ]</p>
+        </section>
+
+        <section class="grafico">
+            <h3>Eventos de Porta</h3>
+            <p>[ Registro de abertura/fechamento ]</p>
+        </section>
+
+        <section id="predicao" class="grafico">
+            <h3>Predição de Erro</h3>
+            <p id="predicaoTexto">Analisando dados...</p>
+        </section>
+
+        <section id="sobre" class="grafico">
+            <h3>Como Funciona o Sistema</h3>
+            <ul>
+                <li><strong>Temperatura:</strong> Controle da faixa ideal (2°C a 8°C).</li>
+                <li><strong>Porta:</strong> Monitoramento de abertura/fechamento.</li>
+                <li><strong>Risco:</strong> Avaliação inteligente baseada nos sensores.</li>
+                <li><strong>Status:</strong> Verificação contínua do sistema.</li>
+            </ul>
+        </section>
+
+    </section>
+
+</main>
+
+<!-- IMPORTANDO JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

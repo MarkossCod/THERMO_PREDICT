@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Central de Suporte</h1>
+    <p>Histórico de chamados enviados</p>
+</header>
+
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="index.html#status">Status</a>
+    <a href="index.html#predicao">Predição</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="suporte.html">Meus Formularios</a>
+</nav>
+
+<main class="container">
+
+    <div style="margin-top:20px;">
+
+        <!-- TÍTULO -->
+        <h2>Formularios Enviados</h2>
+
+        <!-- BOTÕES ABAIXO -->
+        <div style="display:flex; gap:10px; margin-top:15px; flex-wrap:wrap;">
+
+            <button onclick="limparChamados()" style="background:#8e44ad;">
+                Limpar Histórico
+            </button>
+
+            <button onclick="novoChamado()" style="background:#0a3d62;">
+                Novo formulario
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="rodape">
+    <p>Projeto Acadêmico - Cadeia Fria de Vacinas</p>
+</footer>
+
+<!-- IMPORTANDO JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
