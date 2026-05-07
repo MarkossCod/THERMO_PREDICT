@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Chamado</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Central de Suporte</h1>
+        <p>Relate problemas no sistema de monitoramento</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="form.html">Novo Chamado</a>
+        <a href="suporte.html">Chamados</a>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <main class="container">
+
+        <div class="form-card">
+
+            <div class="titulo-pagina">
+                <h2>Abertura de Chamado</h2>
+                <p>Preencha os dados abaixo para registrar um problema.</p>
+            </div>
+
+            <form id="formProblema">
+
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
+
+                <label>Tipo do Problema</label>
+                <select name="tipo" required>
+                    <option value="">Selecione</option>
+                    <option>Temperatura</option>
+                    <option>Sensor</option>
+                    <option>Porta</option>
+                    <option>Sistema</option>
+                    <option>Outro</option>
+                </select>
+
+                <label>Descrição do Problema</label>
+                <textarea name="descricao" rows="6" placeholder="Descreva o problema encontrado..." required></textarea>
+
+                <button type="submit" class="btn-principal">
+                    Enviar Chamado
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>THERMO PREDICT • Monitoramento Inteligente da Cadeia Fria</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

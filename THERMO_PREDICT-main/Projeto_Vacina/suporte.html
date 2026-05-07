@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Chamados</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Central de Suporte</h1>
+        <p>Visualize os chamados registrados no sistema</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="form.html">Novo Chamado</a>
+        <a href="suporte.html">Chamados</a>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <main class="container">
+
+        <div class="suporte-header">
+
+            <div>
+                <h2>Chamados Registrados</h2>
+                <p>Histórico completo dos problemas enviados.</p>
+            </div>
+
+            <div class="acoes-suporte">
+
+                <button onclick="novoChamado()" class="btn-principal">
+                    Novo Chamado
+                </button>
+
+                <button onclick="limparChamados()" class="btn-secundario">
+                    Limpar Histórico
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- LISTA -->
+        <div id="listaChamados" class="lista-chamados"></div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p>THERMO PREDICT • Monitoramento Inteligente da Cadeia Fria</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
